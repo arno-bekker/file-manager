@@ -1,4 +1,9 @@
-# Getting Started
+## Description
+
+This java spring-boot application exposes a REST interface on port 8080 and allows a client application to obtain the full
+directory listing of a given path. The application can be run in a docker container or standalone.
+
+## Getting Started
 
 ### Running the application using Docker
 
