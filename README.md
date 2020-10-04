@@ -21,11 +21,11 @@ directory listing of a given path. The application can be run in a docker contai
 
     $ docker run -d -p 8080:8080 -t file-manager:0.0.1
 
-### Running standalone
+### Running with maven
 
     $ mvn clean spring-boot:run
 
-###### Or
+###### Or running with java
     $ mvn clean package
     $ java -jar target/admin-0.0.1-SNAPSHOT.jar
 
