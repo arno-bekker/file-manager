@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+
+    <springProfile name="dev">
+        <logger name="root" level="INFO" additivity="false">
+            <appender-ref ref="CONSOLE" />
+        </logger>
+        <logger name="com.mycompany" level="TRACE" additivity="false">
+            <appender-ref ref="CONSOLE" />
+        </logger>>
+    </springProfile>
+
+    <springProfile name="staging">
+        <logger name="root" level="INFO" additivity="false">
+            <appender-ref ref="FILE" />
+        </logger>
+        <logger name="com.mycompany" level="DEBUG" additivity="false">
+            <appender-ref ref="FILE" />
+        </logger>>
+    </springProfile>
+
+    <springProfile name="production">
+        <logger name="root" level="INFO" additivity="false">
+            <appender-ref ref="FILE" />
+        </logger>
+        <logger name="com.mycompany" level="WARN" additivity="false">
+            <appender-ref ref="FILE" />
+        </logger>
+    </springProfile>
+</configuration>
